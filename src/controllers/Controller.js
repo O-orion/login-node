@@ -25,15 +25,15 @@ class Controller {
     }
   }
 
-  async createUser(req, res) {
+  async create(req, res) {
     const dadosUser = req.body;
-    console.log(dadosUser);
 
     try {
       const novoUser = await this.entidadeService.createUser(dadosUser);
+
       return res.status(200).json(novoUser);
     } catch (error) {
-      return res.status(403).json({ error: 'ocorreu um erro ao cria usuário' });
+      return res.status(403).json({ error: `ocorreu um erro ao cria usuário: ${error}` });
     }
   }
 

@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-param-reassign */
+/* eslint-disable import/order */
 /* eslint-disable import/extensions */
 const Service = require('./Services.js');
 
