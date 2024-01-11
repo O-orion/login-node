@@ -6,7 +6,7 @@ const auth = require('./authRoute');
 module.exports = (app) => {
   app.use(
     express.json(),
-    usuarios,
     auth,
+    usuarios,
   );
 };
